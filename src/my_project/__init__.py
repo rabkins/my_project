@@ -2,6 +2,6 @@
 #
 # SPDX-License-Identifier: MIT
 
-from my_project import main
+from my_project.main import main
 
 __all__ = ["main"]
