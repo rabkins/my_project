@@ -7,24 +7,22 @@ name = "my-project"
 dynamic = ["version"]
 description = 'Main project'
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.10"
 license = "MIT"
 keywords = []
-authors = [
-  { name = "Marcin r. Raba", email = "rabkins@me.com" },
-]
+authors = [{ name = "Marcin r. Raba", email = "rabkins@me.com" }]
 classifiers = [
   "Development Status :: 4 - Beta",
   "Programming Language :: Python",
-  "Programming Language :: Python :: 3.8",
-  "Programming Language :: Python :: 3.9",
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
   "Programming Language :: Python :: Implementation :: CPython",
   "Programming Language :: Python :: Implementation :: PyPy",
 ]
-dependencies = []
+dependencies = [
+    "dep-1",
+]
 
 [project.urls]
 Documentation = "https://github.com/Marcin r. Raba/my-project#readme"
@@ -35,9 +33,7 @@ Source = "https://github.com/Marcin r. Raba/my-project"
 path = "src/my_project/__about__.py"
 
 [tool.hatch.envs.types]
-extra-dependencies = [
-  "mypy>=1.0.0",
-]
+extra-dependencies = ["mypy>=1.0.0"]
 [tool.hatch.envs.types.scripts]
 check = "mypy --install-types --non-interactive {args:src/my_project tests}"
 
@@ -45,17 +41,14 @@ check = "mypy --install-types --non-interactive {args:src/my_project tests}"
 source_pkgs = ["my_project", "tests"]
 branch = true
 parallel = true
-omit = [
-  "src/my_project/__about__.py",
-]
+omit = ["src/my_project/__about__.py"]
 
 [tool.coverage.paths]
 my_project = ["src/my_project", "*/my-project/src/my_project"]
 tests = ["tests", "*/my-project/tests"]
 
 [tool.coverage.report]
-exclude_lines = [
-  "no cov",
-  "if __name__ == .__main__.:",
-  "if TYPE_CHECKING:",
-]
+exclude_lines = ["no cov", "if __name__ == .__main__.:", "if TYPE_CHECKING:"]
+
+[tool.uv.sources]
+dep-1 = { git = "https://github.com/rabkins/dep-1.git", rev = "v0.0.1" }
