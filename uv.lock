@@ -25,16 +25,16 @@ wheels = [
 
 [[package]]
 name = "dep-1"
-version = "0.0.3"
-source = { git = "https://github.com/rabkins/dep-1.git?rev=v0.0.3#b2462b780fef8cabec611173a05bee797c5526c0" }
+version = "0.0.4"
+source = { git = "https://github.com/rabkins/dep-1.git?rev=v0.0.4#d8186abeaafab7d0890a83395865bd02ee71935e" }
 dependencies = [
     { name = "dep-2" },
 ]
 
 [[package]]
 name = "dep-2"
-version = "0.0.2"
-source = { git = "https://github.com/rabkins/dep-2.git?rev=v0.0.2#e67f9070c75310199858952bf8886ff900ca19bb" }
+version = "0.0.3"
+source = { git = "https://github.com/rabkins/dep-2.git?rev=v0.0.3#6682d66eb1efdd9597efcc47b85d2af6bdc1e4be" }
 dependencies = [
     { name = "click" },
 ]
@@ -47,4 +47,4 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "dep-1", git = "https://github.com/rabkins/dep-1.git?rev=v0.0.3" }]
+requires-dist = [{ name = "dep-1", git = "https://github.com/rabkins/dep-1.git?rev=v0.0.4" }]

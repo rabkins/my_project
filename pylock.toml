@@ -21,13 +21,13 @@ wheels = [{ url = "https://files.pythonhosted.org/packages/d1/d6/3965ed04c63042e
 
 [[packages]]
 name = "dep-1"
-version = "0.0.3"
-vcs = { type = "git", url = "https://github.com/rabkins/dep-1.git", requested-revision = "v0.0.3", commit-id = "b2462b780fef8cabec611173a05bee797c5526c0" }
+version = "0.0.4"
+vcs = { type = "git", url = "https://github.com/rabkins/dep-1.git", requested-revision = "v0.0.4", commit-id = "d8186abeaafab7d0890a83395865bd02ee71935e" }
 
 [[packages]]
 name = "dep-2"
-version = "0.0.2"
-vcs = { type = "git", url = "https://github.com/rabkins/dep-2.git", requested-revision = "v0.0.2", commit-id = "e67f9070c75310199858952bf8886ff900ca19bb" }
+version = "0.0.3"
+vcs = { type = "git", url = "https://github.com/rabkins/dep-2.git", requested-revision = "v0.0.3", commit-id = "6682d66eb1efdd9597efcc47b85d2af6bdc1e4be" }
 
 [[packages]]
 name = "my-project"
