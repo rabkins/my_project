@@ -13,17 +13,6 @@ url = "https://files.pythonhosted.org/packages/3f/93/b7c6ededf12ac9e0b70d20fdf18
 sha256 = "26cd62e3c761d8786b66f3356ba0734c200f34c9478be90e59d2df07f831742b"
 
 [[packages]]
-name = "boto3"
-version = "1.39.14"
-
-[[packages.wheels]]
-name = "boto3-1.39.14-py3-none-any.whl"
-url = "https://files.pythonhosted.org/packages/93/9a/01ea17a58a27b7f4a7a6f6e2f4d4191b9e92362b77b6d58689f2d7eccb99/boto3-1.39.14-py3-none-any.whl"
-
-[packages.wheels.hashes]
-sha256 = "82c6868cad18c3bd4170915e9525f9af5f83e9779c528417f8863629558fc2d0"
-
-[[packages]]
 name = "botocore"
 version = "1.39.14"
 
@@ -62,8 +51,8 @@ name = "dep-1"
 [packages.vcs]
 type = "git"
 url = "https://github.com/rabkins/dep-1"
-requested-revision = "v0.0.7"
-commit-id = "8820d283177b1ba528914b9b446078b153a18f64"
+requested-revision = "v0.0.8"
+commit-id = "e8c876fbb769092fb9da07f1f6d6569fce6f9970"
 
 [[packages]]
 name = "dep-2"

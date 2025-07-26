@@ -20,11 +20,7 @@ classifiers = [
   "Programming Language :: Python :: Implementation :: CPython",
   "Programming Language :: Python :: Implementation :: PyPy",
 ]
-dependencies = [
-  "dep-1 @ git+https://github.com/rabkins/dep-1@v0.0.7",
-  "boto3",
-  "awscli",
-]
+dependencies = ["dep-1 @ git+https://github.com/rabkins/dep-1@v0.0.8"]
 
 [project.optional-dependencies]
 development = ["pytest-async"]
