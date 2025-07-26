@@ -20,7 +20,14 @@ classifiers = [
   "Programming Language :: Python :: Implementation :: CPython",
   "Programming Language :: Python :: Implementation :: PyPy",
 ]
-dependencies = ["dep-1 @ git+https://github.com/rabkins/dep-1@v0.0.6"]
+dependencies = [
+  "dep-1 @ git+https://github.com/rabkins/dep-1@v0.0.7",
+  "boto3",
+  "awscli",
+]
+
+[project.optional-dependencies]
+development = ["pytest-async"]
 
 [project.urls]
 Documentation = "https://github.com/Marcin r. Raba/my-project#readme"
@@ -32,6 +39,10 @@ path = "src/my_project/__about__.py"
 
 [tool.hatch.metadata]
 allow-direct-references = true
+
+[tool.hatch.envs.default]
+pytohn = "3.12"
+features = ["development"]
 
 [tool.hatch.envs.types]
 extra-dependencies = ["mypy>=1.0.0"]
